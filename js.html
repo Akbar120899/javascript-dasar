@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- my font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- my icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- my stile -->
+  <link rel="stylesheet" href="style/style.css" />
+  <title>javascript dasar</title>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>javascript dasar</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">node</a></li>
+          <li><a href="#"> selection</a></li>
+          <li><a href="#"> manipulation</a></li>
+          <li><a href="#"> ivents</a></li>
+        </ul>
+
+      </nav>
+      <div class="hamburger">
+        <i class="ri-search-line"></i>
+        <i class="ri-settings-5-line"></i>
+        <i class="ri-align-justify"></i>
+      </div>
+    </div>
+
+  </header>
+  <div class="kosong"></div>
+
+  <!-- operator -->
+  <section class="c-operator">
+    <div class="operator">
+      <div class="pengertian-op">
+        <h1>#operator</h1>
+        <p>operator pada java script adalah sebuah simbol yang digunakan untuk melakukan operasi
+
+        </p>
+      </div>
+      <div class="jenis-op">
+        <main class="kiri">
+          <p>ada banyak operator pada javascript</p>
+          <table cellspacing="0">
+            <tr>
+              <th>operator</th>
+            </tr>
+            <tr>
+              <td>aretmatika</td>
+            </tr>
+            <tr>
+              <td>penugasan</td>
+            </tr>
+            <tr>
+              <td>perbandingan</td>
+            </tr>
+            <tr>
+              <td>logika</td>
+            </tr>
+            <tr>
+              <td>string</td>
+            </tr>
+            <tr>
+              <td>kondisional</td>
+            </tr>
+            <tr>
+              <td>type of</td>
+            </tr>
+
+          </table>
+
+        </main>
+        <main class="kanan">
+          <p>operator-operator ini kita akan bagi menurut jumblah operannya</p>
+          <div class="k-tabel">
+            <table cellspacing="0">
+              <tr>
+                <th>binary</th>
+              </tr>
+              <tr>
+                <td>aretmatika</td>
+              </tr>
+              <tr>
+                <td>penugasan</td>
+              </tr>
+              <tr>
+                <td>perbandingan</td>
+              </tr>
+              <tr>
+                <td>logika</td>
+              </tr>
+              <tr>
+                <td>string</td>
+              </tr>
+
+              <table cellspacing="0">
+                <tr>
+                  <th>ternary</th>
+                </tr>
+                <tr>
+                  <td>kondisional</td>
+                </tr>
+              </table>
+
+              <table cellspacing="0">
+                <tr>
+                  <th>unary</th>
+                </tr>
+                <tr>
+                  <td>typeof</td>
+                </tr>
+              </table>
+
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- binary -->
+    <div class="c-btu">
+      <main class="binary">
+        <h4>A. binary</h4>
+        <p>binary adalah operator yang membutuhkan dua operand</p>
+        <p> contoh : <br>
+          <span class="oprd">operand</span>
+          <span class="oprt">operator</span>
+          <span class="oprd">operand</span>
+        </p>
+        <div class="aretmatika">
+          <h5>a. operator aretmatika/matematik</h5>
+          <table cellspacing="0">
+            <tr>
+              <th>aretmatika</th>
+              <th>keterangan</th>
+            </tr>
+            <tr>
+              <td>+</td>
+              <td>tambah</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>kurang</td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>kali</td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>bagi</td>
+            </tr>
+            <tr>
+              <td>%</td>
+              <td>modulus/sisa bagi</td>
+            </tr>
+          </table>
+          <p>catatan : hati-hati jika melakukan beberapa operasi matematik secara bersamaan karna sama seperti
+            matematika
+            pada umumnya. dimana ada operator yang akan dikerjakan terlebih dahulu urutannya seperti ini (), *, /, +, -
+          </p>
+        </div>
+        <div class="penugasan">
+          <h5>b. operator penugasan/assigment</h5>
+          <table cellspacing="0">
+            <tr>
+              <th>operator</th>
+              <th>keterangan</th>
+            </tr>
+            <tr>
+              <td>=</td>
+              <td>sama dengan</td>
+            </tr>
+            <tr>
+              <td>+=</td>
+              <td>tambah samadengan</td>
+            </tr>
+            <tr>
+              <td>-=</td>
+              <td>kurang samadengan</td>
+            </tr>
+            <tr>
+              <td>*=</td>
+              <td>kali samadengan</td>
+            </tr>
+            <tr>
+              <td>/=</td>
+              <td>bagi samadengan</td>
+            </tr>
+            <tr>
+              <td>%=</td>
+              <td>modulus samadengan</td>
+            </tr>
+          </table>
+          <p>catatan : yang paling sring kita gunakan adalah tanada (=) ketika membuat variable</p>
+          <p>contoh : <br>
+            variabel x = 10
+          </p>
+          <table cellspacing="0">
+            <tr>
+              <th>contoh</th>
+              <th>hasil</th>
+            </tr>
+            <tr>
+              <td>x += 5</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>x -= 5</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>*=</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>/=</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>%=</td>
+              <td>0</td>
+            </tr>
+          </table>
+        </div>
+        <div class="perbandingan">
+          <h5>c. operator perbandingan/comparison</h5>
+          <p>perbandingan digunakan untu membandingkan dua buah <span class="oprd">operand</span>. ada banyak operatror
+            perbandingan</p>
+          <table cellspacing="0">
+            <tr>
+              <th>op</th>
+              <th>keterangan</th>
+              <th>contoh</th>
+            </tr>
+            <tr>
+              <td>==</td>
+              <td>sama dengan</td>
+              <td>10 == 10 <span class="true">true</span>|10 == 5 <span class="false">false</span></td>
+            </tr>
+            <tr>
+              <td>!=</td>
+              <td>tidak samadengan</td>
+              <td>10 != 5 <span class="true">true</span>|10 != 10 <span class="false">false</span></td>
+            </tr>
+            <tr>
+              <td>===</td>
+              <td>strict sama dengan</td>
+              <td>membandingkan nilai dan juga tipenya</td>
+            </tr>
+            <tr>
+              <td>!==</td>
+              <td> strict tidak sama dengan</td>
+              <td>membandingkan nilai dan juga tipenya </td>
+            </tr>
+            <tr>
+              <td>></td>
+              <td>lebih besar dari</td>
+              <td>10 > 5 <span class="true">true</span>|5 > 10 <span class="false">false</span></td>
+            </tr>
+            <tr>
+              <td>></td>
+              <td>lebih kecil dari</td>
+              <td>5 < 10 <span class="true">true</span>|10 < 5 <span class="false">false</span></td>
+            </tr>
+            <tr>
+              <td>>=</td>
+              <td>lebih besar smadengan</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <= </td>
+              <td>lebih kecil smadengan </td>
+              <td></td>
+            </tr>
+          </table>
+          <p>operator perbandingan ini menghasilkan nilai bolean <span class="true">true</span> dan <span
+              class="false">false</span></p>
+        </div>
+        <div class="logika">
+          <h5>d. logika/logical</h5>
+          <p>operator ini digunakan untuk menentukan logika dari beberapa ekspresi yang nnti kita gabungkan</p>
+          <table cellspacing="0">
+            <tr>
+              <th>logika</th>
+              <th>keterangan</th>
+            </tr>
+            <tr>
+              <td>&&</td>
+              <td>AND</td>
+            </tr>
+            <tr>
+              <td>||</td>
+              <td>OR</td>
+            </tr>
+            <tr>
+              <td>!</td>
+              <td>NOT</td>
+            </tr>
+          </table>
+          <p>contoh : <br>
+            variable x = 10
+          </p>
+          <table cellspacing="0">
+            <tr>
+              <th>contoh</th>
+              <th>c-keterangan</th>
+            </tr>
+            <tr>
+              <td>(x % 2 == 0) <span class="true">true</span> && (x < 5) <span class="false">false</span></td>
+              <td>jika menggunakan && semua kondisi <span class="oprd">operand</span> harus <span
+                  class="true">true</span>
+              </td>
+            </tr>
+            <tr>
+              <td>(x % 2 == 0) <span class="true">true</span> || (x < 5) <span class="false">false</span></td>
+              <td>jika menggunakan || slah satu kondisi <span class="oprd">operand</span> benar maka hasilnya <span
+                  class="true">true</span></td>
+            </tr>
+            <tr>
+              <td>!(x < 20) <span class="false">false</span></td>
+              <td>ini untuk membalikkan keadaan</td>
+            </tr>
+
+          </table>
+        </div>
+        <div class="string">
+          <h5>e. string</h5>
+          <p>operator ini adalah penggabung string atau tulisan dengan operator +</p>
+        </div>
+      </main>
+
+      <!-- ternary -->
+      <main class="ternary">
+        <h4>B. ternary</h4>
+        <p>ternary adalah operator yang membutuhkan tiga operand</p>
+        <h5>a.kondisional</h5>
+        <p>operator ini digunakan untuk melakukan pengecekan pada sebuah kondisi dan menentukan nilai yang dihasilkan
+          ketika kondisinya bernilai <span class="true">true</span> atau <span class="false">false </span></p>
+        <br>
+        <p>cara penulisan (kondisi)? <span class="true">true</span> : <span class="false">false</span></p>
+        <p>contoh : <br>
+          (<span class="oprd">x % 2 == 0</span>) ? jika " <span class="true">jika benar tujukkan ini</span> " <br>
+          jika " <span class="false">jika salah tunjukkan ini</span> "
+        </p>
+      </main>
+
+      <!-- unary -->
+      <main class="unary">
+        <h4>c. unary</h4>
+        <p>unary hanya membutuhkan satu operand saja</p>
+        <br>
+        <p>
+          <span class="oprd">operand</span>
+          <span class="oprt">operator</span> <br>
+          atau sebaliknya <br>
+          <span class="oprt">operator</span>
+          <span class="oprd">operand</span>
+        </p>
+
+        <h5>a. typeof</h5>
+        <p>operator typeof digunakan untuk mengetahui tipe data apa yang dimasukkan kedalamnya</p>
+        <p>contoh : </p>
+        <table cellspacing="0">
+          <tr>
+            <th>type data</th>
+            <th>hasil</th>
+          </tr>
+          <tr>
+            <td>typeof(10)</td>
+            <td>number</td>
+          </tr>
+          <tr>
+            <td>typeof("10")</td>
+            <td>"string"</td>
+          </tr>
+          <tr>
+            <td>typeof(true)</td>
+            <td>boleans</td>
+          </tr>
+        </table>
+      </main>
+    </div>
+  </section>
+  <!-- operator end -->
+  <!-- !tipe data start -->
+  <section class="tipe-data">
+    <main class="td-judul">
+      <h1># tipe data</h1>
+    </main>
+    <div class="c-tipe-data">
+
+      <!-- tipe data string -->
+      <main class="string">
+        <h3>a. string</h3>
+        <ul>
+          <li>tipe data string dalam javascript digunakan untuk merepresentasikan data tekstual/plain text.</li>
+          <li>di javascript, untuk membuat data dengan tipe string ,kita perlu menggunakan " (petik dua) sebelum dan
+            setelah isi text</li>
+          <li>untuk menggabungkan sebuah string kita dapat menggunakan oprator + (plus)</li>
+        </ul>
+
+        <p>untuk menuliskan string pada javascript yang perlu dilakukan hanya membungkus data/nilai menggunakan tanda ("
+          ")atau (' ')</p>
+        <p>catatan : hati-hati menggunakan tanda kutip (jika ad kerakter di dalmnya terdapat kitip satu maka bungus data
+          menggunakan kuitp dua begitupun sebaliknya)</p>
+        <p> contoh : <br>
+          kutip dua = "hari ini adalah hari jum'at" <br>
+          kutip satu = ' kegiatan "gerakan pungut sampah" hari senin' <br>
+          jika suatu nilai di dalmnya terdapat dua kerakter kuip seperti di bawah ini <br>
+          " hari ini adalah hari jum'at bsek kegiatan "gerakan pungut sampah" " . agar tidak eror kita dapat menambahkan
+          (
+          \ ) pada nilai yang ingin dimunculkan <br>
+          contoh = " hari ini adalah hari jum'at bsek kegiatan \"gerakan pungut sampah\" "
+        </p>
+        <p>ini dinamakan escape/character untuk memunculkan kutip</p>
+
+        <table cellspacing="0">
+          <tr>
+            <th>scape character</th>
+            <th>hasil</th>
+          </tr>
+          <tr>
+            <td>/0</td>
+            <td>kerakter NULL</td>
+          </tr>
+          <tr>
+            <td>/'</td>
+            <td>'</td>
+          </tr>
+          <tr>
+            <td>/"</td>
+            <td>"</td>
+          </tr>
+          <tr>
+            <td>//</td>
+            <td>/</td>
+          </tr>
+          <tr>
+            <td>/n</td>
+            <td>new line/baris baru</td>
+          </tr>
+          <tr>
+            <td>/t</td>
+            <td>tab</td>
+          </tr>
+          <tr>
+            <td>/b</td>
+            <td>backspace</td>
+          </tr>
+          <tr>
+            <td>/uxxxx</td>
+            <td>unicode/simbol</td>
+          </tr>
+        </table>
+        <p>kita juga dapat membandingkan string dengan menggunakan operator == atau === ( dia akan mengecek dua buah
+          sting
+          itu sama atu tidak)
+        </p>
+        <p>contoh : <br>
+          "Muhammad Akbar" == "muhammad akbar" <br>
+          hati-hati jika menggunakan ini karna akan membandingkan huruf besar dan kecil meskipun tulisannya sama
+        </p>
+        <p>yang terakhir di dalam sting ada sebuah fungsi yang dapat kita gunakan untuk menghitung panjang dari sebuah
+          string ( .lenght) <br>
+          contoh : <br>
+          "muhammad akbar".length //16
+        </p>
+      </main>
+      <!-- tipe data number -->
+      <main class="number">
+        <h3>b. tipe data number</h3>
+        <ul>
+          <li>javascript hanya mendukung satu tipe data number, dimana tipe data number di java script bisa berupa
+            bilngan bulat atau bilangan desimal</li>
+          <li>tipe seperti di bahasa pemprograman lain yang biasanya membedakan tipe data number bilangan bulat dan
+            bilangan desimal, di jaa script semuanya disatukan</li>
+        </ul>
+        <p> contoh : <br>
+          const <span class="oprd">a </span> = 10: <br>
+          const <span class="oprd">a </span> = 100.10:
+        </p>
+      </main>
+      <!-- tipe data bolean -->
+      <main class="bolean">
+        <h3>c. tipe data bolean</h3>
+        <ul>
+          <li>tipe data bolean adalah tipe data yang berisikan data kebenaran artinya hanya ada dua data <span
+              class="true">true</span> atau <span class="false">false</span></li>
+          <li>walaupun tipe data bolean merupakan tipe data yang sangat sederhana . tapi tipe data bolean akan bnyak
+            digunakan di berbagai fitur pemprograman</li>
+        </ul>
+      </main>
+    </div>
+    <!-- konversi tipe data -->
+    <div class="konversi-tipe-data">
+      <main class="k-td">
+        <h3>d. konversi string dan number</h3>
+        <p>konversi digunakan untuk mengubah data yang awalnya string menjadi number atau sebaliknya</p>
+        <ul>
+          <li>saat membuat aplikasi, kadang kita input dari pengguna selalu dalambentuk string</li>
+          <li>sedangka kita ingin mengelola dalam bentuk number</li>
+          <li>maka sangat disarankan untuk konversi tipe data</li>
+        </ul>
+        <table cellspacing="0">
+          <tr>
+            <th>function</th>
+            <th>keterangan</th>
+          </tr>
+          <tr>
+            <td>parseInt(string)</td>
+            <td>mengkonversi dari string ke number (bilangan bulat)</td>
+          </tr>
+          <tr>
+            <td>parseFloat(string)</td>
+            <td>mengkonversi dari string ke number (bilangan pecahan)</td>
+          </tr>
+          <tr>
+            <td>number(string)</td>
+            <td>mengkonversi dari string ke number (bilangan bulat) atau pecahan</td>
+          </tr>
+          <tr>
+            <td>number.toString()</td>
+            <td>konversi dari number ke string</td>
+          </tr>
+        </table>
+        <h4>contoh :</h4>
+        <p>const a =parseInt ("1"); <br>
+          const b = 1; <br>
+          const hasil = a + b; // =2
+        </p>
+        <table cellspacing="0">
+          <tr>
+            <th>contoh</th>
+            <th>hasil</th>
+            <th>keterangan</th>
+          </tr>
+          <tr>
+            <td>parseInt("1.1")</td>
+            <td>1</td>
+            <td>parseInt ini bilangan pecahannya akan diabaikan </td>
+          </tr>
+          <tr>
+            <td>parseFloat("1.1")</td>
+            <td>1.1</td>
+            <td>parseFloat ini akan tetap menerima nilai pecahan</td>
+          </tr>
+          <tr>
+            <td>number("1.1")</td>
+            <td>1.1</td>
+            <td>number ini bisa fleksibel jika nilainya int maka hasilnya int dan jika nilainya float maka hasilnya juga
+              foat</td>
+          </tr>
+          <tr>
+            <td>a.toString() + b.toString()</td>
+            <td>11</td>
+            <td>ini akan menggabungkan string bukan menjumlahkan walaupu nilainya angka</td>
+          </tr>
+        </table>
+      </main>
+    </div>
+    <div class="nan">
+      <h3>e. NaN</h3>
+      <p>didalam number itu ada sebuah number yunik namanya adalahh NaN. ini diguakan ketika ada kejadian mengkonversi
+        data tidak valid seperti memasukkan huruf</p>
+      <ul>
+        <li>bagaimana jika ternyata data string yang kita coba konversi ke number bukanlah data yang valid?</li>
+        <li>jika data string yng kita coba konversi bukan data valid , maka hasil dari konversi tersebut adalah NaN (not
+          a number)</li>
+        <li>NaN adalah number special yang menyebutkan bahwa ini bukan number</li>
+        <li>jikan NaN dioprasikan dengan data number lainnya, maka hasilnya akan menjadi NaN juga</li>
+      </ul>
+
+      <h4>contoh :</h4>
+      <p>const a =parseInt ("akbar"); <br>
+        const b = 1; <br>
+        const hasil = a + b; // = NaN
+      </p>
+      <table cellspacing="0">
+        <tr>
+          <th>contoh</th>
+          <th>hasil</th>
+          <th>keterangan</th>
+        </tr>
+        <tr>
+          <td>parseInt("1.1akbar")</td>
+          <td>1</td>
+          <td>jika parseInt di belakannya bukan angka, maka akan diabaikan. tetapi jika didepan bukan angka maka
+            hasilnya akan NaN </td>
+        </tr>
+        <tr>
+          <td>parseFloat("1.1akbar")</td>
+          <td>1.1</td>
+          <td>jiika parseFloat di belakannya bukan angka maka, akan diabaikan. tetapi jika didepan bukan angka maka
+            hasilnya akan NaN</td>
+        </tr>
+        <tr>
+          <td>number("1.1akbar")</td>
+          <td>NaN</td>
+          <td>jika number hasilnya akan tetap menjadi NaN jika ad nilai bukan angka (tidak mentoleransi)</td>
+        </tr>
+        <tr>
+          <td>a.toString() + b.toString()</td>
+          <td>11</td>
+          <td>ini akan menggabungkan string bukan menjumlahkan walaupu nilainya angka</td>
+        </tr>
+      </table>
+      <h3>f. isNaN() fuction</h3>
+      <p>isNaN ini digunakan untuk menegecek apakah sebuah namber itu NaN atau bukan </p>
+      <ul>
+        <li>kadang kita ingin mengecek apakah sebuah number itu NaN atau bukan</li>
+        <li>untuk melakukan pengecekan tersebut, kita bisa menggunakan fuction isNaN(number)</li>
+        <li>hasilnya adalah sebuah data boolean yaitu <span class="true">true</span> atau <span
+            class="false">false</span></li>
+      </ul>
+      <h4>contoh:</h4>
+      <p>const a = number(akbar); <br>
+        const b = 100; <br>
+        const hasil = isNaN(a) // terue <br>
+        const hasil = isNaN(b) // false
+
+      </p>
+
+    </div>
+  </section>
+  <!-- !tipe data end -->
+
+  <!-- !popup box start -->
+  <section class="popup-box">
+    <div class="judul-popup">
+      <h2># popup box</h2>
+      <p>popup box / dialog box adalah sebuah window kecil pada browser kita yang dapat kita munculkan sebagai alat
+        interaksi yang digunakan agar user dapat berdialog dengan halaman web</p>
+    </div>
+    <table cellspacing="0">
+      <tr>
+        <th>jenis popup box</th>
+        <th>cara penggunaan</th>
+        <th>keterangan</th>
+      </tr>
+      <tr>
+        <td>alert</td>
+        <td>alert('hello world')</td>
+        <td>hanya memberikan tombol ok</td>
+      </tr>
+      <tr>
+        <td>prompt</td>
+        <td>prompt('masukkan nama:')</td>
+        <td>sama memunculkan widows kecil tetapi user dapat mengimputkan sesuatu</td>
+      </tr>
+      <tr>
+        <td>confirm</td>
+        <td>confirm('kamu yakin?')</td>
+        <td>ini digunakan untukmeminta konfirmasi ya atau tidak dari user (memberikan nilai true atau false)</td>
+      </tr>
+    </table>
+  </section>
+  <!-- !popup box end -->
+
+  <!-- !pengulangan start -->
+  <section class="pengulangan">
+    <div class="judul-pengulangan">
+      <h1>#pengulangan</h1>
+      <P>didalam pemprograman pengulangan digunakan untuk mengulang sebuah perintah, pengulanga terdapat tiga sintaks
+        yaitu while, for, do while</P>
+      <div class="while">
+        <main class="kiri">
+          <h3>a. while</h3>
+          <p class="cp">cara penulisan : <br>
+            while (kondisi) { <br>
+            aksi <br>
+            }
+          </p>
+          <p class="contoh1">contoh : dihentikan oleh user <br>
+            var <span class="variable">ulang</span> <span class="oprt">=</span> <span class="true">true</span>; <br>
+            while (<sapan class="variable"> ulang </sapan>) { <br>
+            console.log(' <span class="oprd">hello world</span> '); <br>
+            <span class="variable">ulang</span> <span class="oprt">=</span> confirm(' <span class="oprd">lagi?</span>
+            '); <br>
+            }
+          </p>
+          <p class="contoh2">contoh : dihentikan oleh program <br>
+            var <span class="variable">nilaiAwal</span> <span class="oprt">=</span> 1 ; <br>
+            while ( <span class="variable">nilaiAwal</span> <span class="oprt">
+              <= </span> 5 ) { <br>
+                console.log (' <span class="oprd">hello world</span> '); <br>
+                <span class="variable">nilaiAwal++ </span>; <br>
+                }
+          </p>
+          <p class="contoh2">jika ingin menulisaka hello world 1x - hello world 10x kita tambahkan variable
+            nilaiAwal<br>
+            var <span class="variable">nilaiAwal</span> <span class="oprt">=</span> 1 ; <br>
+            while ( <span class="variable">nilaiAwal</span> <span class="oprt">
+              <= </span> 5 ) { <br>
+                console.log (' <span class="oprd">hello world</span>' <span class="oprt">+</span> <span
+                  class="variable">nilaiAwal</span> ); <br>
+                <span class="variable">nilaiAwal++ </span>; <br>
+                }
+          </p>
+        </main>
+        <main class="kanan">
+          <h5>latihan while</h5>
+          <p class="latihan">
+            var <span class="variable">nilaiAwal</span> <span class="oprt">=</span> 1 ; <br>
+            while ( <span class="variable">nilaiAwal</span> <span class="oprt">
+              <= </span> 10 ) { <br>
+                console.log (' <span class="oprd">Angkot No.</span>' <span class="oprt">+</span> <span
+                  class="variable">nilaiAwal</span> <span class="oprt">+</span> ' <span class="oprd">beroprasi dengan
+                  baik.</span> ' ); <br>
+                <span class="variable">nilaiAwal++ </span>; <br>
+                }
+          </p>
+          <table>
+            <tr>
+              <th>hasil</th>
+            </tr>
+            <tr>
+              <td>Angkot No. 1 beroprasi denganbaik</td>
+            </tr>
+            <tr>
+              <td>Angkot No. 2 beroprasi denganbaik</td>
+            </tr>
+            <tr>
+              <td>Angkot No. 3 beroprasi denganbaik</td>
+            </tr>
+            <tr>
+              <td>Angkot No. 4 beroprasi denganbaik</td>
+            </tr>
+            <tr>
+              <td>Angkot No. 5 beroprasi denganbaik</td>
+            </tr>
+            <tr>
+              <td>Angkot No. 6 beroprasi denganbaik</td>
+            </tr>
+            <tr>
+              <td>Angkot No. 7 beroprasi denganbaik</td>
+            </tr>
+            <tr>
+              <td>Angkot No. 8 beroprasi denganbaik</td>
+            </tr>
+            <tr>
+              <td>Angkot No. 9 beroprasi denganbaik</td>
+            </tr>
+            <tr>
+              <td>Angkot No. 10 beroprasi denganbaik</td>
+            </tr>
+          </table>
+        </main>
+      </div>
+    </div>
+
+    <div class="for">
+      <main class="kiri">
+        <h3>b. for</h3>
+        <p> contoh 1 : <br>
+          for (var <span class="variable">nilaiawal</span> <span class="oprt">=</span> 1; <span
+            class="variable">nilaiAwal</span> <span class="oprt">
+            <= </span> 10; <span class="variable">nilaiAwal++</span> ) { <br>
+              console.log(' <span class="oprd">hello world</span> ' <span class="oprt">+</span> <span
+                class="variable">nilaiAwal</span> <span class="oprt">+</span> ' <span class="oprd">x</span> ' ); <br>
+              }
+        </p>
+      </main>
+      <main class="kanan">
+        <h3>latihan for</h3>
+        <p class="latihan-k">
+          var <span class="variable">jmlAngkot</span> <span class="oprt">=</span> 10; <br>
+          var <span class="variable">angkotBeroprasi</span> <span class="oprt">=</span> 6; <br>
+          var <span class="variable">noAngkot</span> <span class="oprt">=</span> 1; <br> <br>
+          while( <span class="variable">noAngkot</span> <span class="oprt">
+            <= </span> <span class="variable">angkotBeroprasi</span> ) { <br>
+              console.log( ' <span class="oprd">Angkot No.</span>'<span class="operator">+</span><span
+                class="variable">noAngkot</span><span class="operator">+</span>'<span class="oprd">beroprasi dengan
+                baik</span> '); <br>
+              <span class="variable">noAngkot++</span>; <br>
+              } <br>
+              for( <span class="variable">noAngkot</span> <span class="oprt">=</span> <span
+                class="variable">angkotBeroprasi</span><span class="oprt">+</span> 1; <span
+                class="variable">noAngkot</span><span class="oprt">
+                <= </span><span class="variable">jmlAngkot</span>;
+              </span> <span class="variable">noAngkot++</span>) { <br>
+              console.log( ' <span class="oprd">Angkot No.</span>'<span class="operator">+</span><span
+                class="variable">noAngkot</span><span class="operator">+</span>'<span class="oprd">tidak beroprasi
+                dengan
+                baik</span> '); <br>
+              }
+        </p>
+
+        <table>
+          <tr>
+            <th>hasil</th>
+          </tr>
+          <tr>
+            <td>Angkot No. 1 beroprasi denganbaik</td>
+          </tr>
+          <tr>
+            <td>Angkot No. 2 beroprasi denganbaik</td>
+          </tr>
+          <tr>
+            <td>Angkot No. 3 beroprasi denganbaik</td>
+          </tr>
+          <tr>
+            <td>Angkot No. 4 beroprasi denganbaik</td>
+          </tr>
+          <tr>
+            <td>Angkot No. 5 beroprasi denganbaik</td>
+          </tr>
+          <tr>
+            <td>Angkot No. 6 beroprasi denganbaik</td>
+          </tr>
+          <tr>
+            <td>Angkot No. 7 tidak beroprasi denganbaik</td>
+          </tr>
+          <tr>
+            <td>Angkot No. 8 tidak beroprasi denganbaik</td>
+          </tr>
+          <tr>
+            <td>Angkot No. 9 tidak beroprasi denganbaik</td>
+          </tr>
+          <tr>
+            <td>Angkot No. 10 tidak beroprasi denganbaik</td>
+          </tr>
+        </table>
+      </main>
+    </div>
+
+    <div class="do-while">
+      <main class="kiri">
+        <h3>b. do while</h3>
+      </main>
+      <main class="kanan"></main>
+    </div>
+  </section>
+  <!-- !pengulangan end -->
+  <!-- !pengkondisian start -->
+  <section class="pengkondisian">
+    <div class="judul-p">
+      <h1>#pengkondisian</h1>
+    </div>
+
+    <div class="c-if">
+      <main class="kiri">
+        <h3>a. if-else </h3>
+        <p> sintaks penggunakaan : <br>
+          <img src="img/if-1.jpg" alt="">
+        </p>
+        <p>contoh penggunakan operator perbandingan/identitas <br>
+          <img src="img/if-2.jpg" alt="">
+        </p>
+        <p>contoh penggunakan operator lebih kecil dari <br>
+          <img src="img/if-3.jpg" alt="">
+        </p>
+        <p>contoh penggunakan if else. untuk memberikan 2 kondisi <br>
+          <img src="img/if-else.jpg" alt="">
+        </p>
+        <p> sintaks pengkondisian if else <br>
+          <img src="img/if-4.jpg" alt="">
+        </p>
+
+
+      </main>
+      <main class="kanan">
+        <h3>latihan if-else </h3>
+        <p>menggunakan satu buah for di dalamnya terdapat pengkondisian if else <br>
+          <img class="lt-if1" src="img/latihan-ifelse1.jpg" alt="">
+        </p>
+        <p> hasil <br>
+          <img class="lt-if2" src="img/latihan-ifelse2.jpg" alt="">
+        </p>
+        <div class="else-if">>
+          <h3>b. if.. else if.. else</h3>
+          <p>sintaks if.. else if.. else <br>
+            <img src="img/else1.jpg" alt="">
+          </p>
+          <p>contoh if.. else if.. else <br>
+            <img src="img/else2.jpg" alt="">
+          </p>
+        </div>
+      </main>
+
+
+    </div>
+  </section>
+  <!-- !pengkondisian end -->
+
+  <!-- !fucntion start -->
+  <section class="function">
+    <div class="judul-function">
+      <h1 id="function"># fucntion</h1>
+      <p>fuction adalah kunci utama pada javascript, yang membuat javascript sangat powerfull</p>
+    </div>
+    <div class="l-function">
+      <ul>
+        <li>function adalah sebuah sub-program / sub-routine yang dapat dipanggil dibagian lain pada program</li>
+        <li>function merupakan strukture dasar pembentuk dari javascript</li>
+        <li>function disebut juga sebagai prosedur (kumpulan statment untuk memlakukan tugas atau menghitung sebuah
+          nilai)</li>
+        <li>untuk dapat menggunakannya, kita terlebih dahulu harus membuat function tersebut lalu memanggilnya</li>
+        <li>function termasuk kedalam first-class object</li>
+      </ul>
+    </div>
+    <div class="c-membuat-f">
+      <h3>a. sintaks penulisan function argument</h3>
+      <div class="contoh">
+        <main class="cnth1">
+          <p><span class="oprt">function</span> judulFunction <span class="oprd">(a, b)</span> { <br>
+            const a = a * a * a;<br>
+            const b = b * b * b; <br>
+            const total = a + b; <br>
+            return total; <br>
+            } <br>
+            console.log(judulFunction( <span class="oprd">8, 3</span> ));
+          </p>
+        </main>
+        <main class="cnth2">
+          <h5>user yang menentukan nilainya =></h5>
+          <p><span class="oprt">function</span> tambah <span class="oprd">(a, b)</span> { <br>
+
+            return a +b; <br>
+            } <br>
+            const a = parseInt(prompt('masukkan nilai 1')); <br>
+            const b = parseInt(prompt('masukkan nilai 2')); <br>
+            const hasil = tambah(a, b); <br>
+
+            alert( <span class="oprd">hasil</span> );
+          </p>
+        </main>
+      </div>
+      <div class="c-membuat-f2">
+        <h3>b. sintaks penulisan function arguments</h3>
+        <p>array yang berisi nilai yang dikirimkan saat fungsi dipanggil</p>
+        <main class="cnth">
+          <p><span class="oprt">function</span> tambah <span class="oprd">()</span> { <br>
+            const hasil = 0; <br>
+            for(let i = 0; i < arguments.lenght; i++) { <br>
+              hasil += arguments[i]; <br>
+              } <br>
+              return hasil; <br>
+              } <br>
+              const coba = tambah(1,2,3,4,5); <br>
+              console.log(coba);
+          </p>
+        </main>
+      </div>
+      <div class="rfactoring">
+        <main class="judul-r">
+          <h3>c. refactoring</h3>
+          <p>refactoring adalah sebuah proses mengubah kode agar lebih baik tanpa mengubah fungsionalnya</p>
+          <dl>
+            <dt>
+              <li>readanility</li>
+            </dt>
+            <dd>
+              <li type="circle">kemudahan dlam membaca kode program, karna program yangbaik adalah progaram mudah dibaca
+                pembuatnya dan juga orang lain</li>
+            </dd>
+            <dt>
+              <li>dry (don't repeat yourself)</li>
+            </dt>
+            <dd>
+              <li type="circle">dapat mengatasi pengunaan variable yang berlebihan, metode fuction dll</li>
+            </dd>
+          </dl>
+        </main>
+      </div>
+
+      <dl>
+        <dt>
+          <li>prameter</li>
+        </dt>
+        <dd>
+          <li type="circle">variabel yang ditulis didalam kurung pada saat function dibuat, diguakan untuk menampung
+            nilai yang dikirimkan saat function dipanggil</li>
+        </dd>
+        <dt>
+          <li>argument</li>
+        </dt>
+        <dd>
+          <li type="circle">nilai yang dikirmkan ke prameter saat fungsi dipanggil</li>
+        </dd>
+      </dl>
+    </div>
+    <!-- functin declaration vs function expression -->
+    <div class="declaration-expression">
+      <main class="declaration-f">
+        <div class="judul">
+          <h3>d. function declaration</h3>
+          <p>function declarasion harus memiliki nama</p>
+        </div>
+        <div class="cf-declaration">
+          <p>
+            tampilPesan('akbar'); <br>
+            const tampilPesan = function(nama) { <br>
+            alert('hello' + nama);<br>
+            }
+          </p>
+        </div>
+      </main>
+      <main class="expression-f">
+        <div class="judul">
+          <h3>e. function expression</h3>
+          <p>function expression ini boleh saja tidak memiliki nama, dan juga disimpan di dalam variable. expressoin
+            tidak dapat memanggil defininya jika ditulis duluan </p>
+        </div>
+        <div class="cf-expression">
+          <p>
+            const tampilPesan = function(nama) { <br>
+            alert('hello' + nama);<br>
+            } <br>
+            tampilPesan('akbar');
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <div class="kategori-function">
+      <main class="built-in-function">
+        <div class="j-built-in">
+          <h3>a. built in function</h3>
+          <p>ini function yang sudah dibuatkan oleh javascript</p>
+          <a href="https://www.w3schools.com/jsref/jsref_obj_math.asp">link built f</a>
+        </div>
+      </main>
+      <main class="user-define-function">
+        <div class="j-user-define">
+          <h3>b. user user define function</h3>
+          <p>ini function kita buat sendiri</p>
+        </div>
+      </main>
+    </div>
+    <div class="declaration-expression">
+
+    </div>
+  </section>
+  <!-- !fucntion end -->
+
+  <!-- !tipe data array start-->
+  <section class="array">
+    <div class="judul">
+      <h1 id="judul-array"># array</h1>
+      <p>array adlah tipe data yangdigunakan untuk mendeskripsikan kumpulan elemen(nilai atau variabel), yang tiap-tiap
+        elemennya memiliki index.array adalah tipe data yang berisikan kumpulan data, array di javascript memiliki sifat
+        dinamis, artinya
+        datanya bisa bertmbah dengan sendirinya saat kita memasukkan data ke dalam array</p>
+    </div>
+    <div class="cara-kerja-array">
+      <dl>
+        <dt>
+          <li>cara kerja array</li>
+        </dt>
+        <dd>
+          <li type="circle">setiap data di array akan disimpan dalam posisi berurutan, dimana urutan pertama dimulai
+            dengan 0</li>
+          <li type="circle">setiap kita menambah data ke array otomatis data akan disimpan di urutan terakhir</li>
+          <li type="circle">urutan di array kita sebut dengan indeks</li>
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <li>kenapa menggunakan array</li>
+        </dt>
+        <dd>
+          <li type="circle">untuk mempermudah mengelolah nilai/value/data</li>
+          <li type="circle">manajemen memori</li>
+        </dd>
+
+        <dt>
+          <li>kerasteristik arrey</li>
+        </dt>
+        <dd>
+          <li type="circle">variable jamak, yang mempunyai banyak elemen dan diacu dengan nama yang sama</li>
+          <li type="circle">kumpulan pasngan key dan nilai(key=index)</li>
+          <li type="circle">key adalah index pada array dengan tipe integer yang dimulai dari 0</li>
+          <li type="circle">araay pada javascript bertipe object</li>
+          <li type="circle">array pada javascript memiliki fungsi/method lenght untuk menghitung jumlah elemen di
+            dalamnya</li>
+          <li type="circle">elemen pada array boleh memiliki tipe data yang berbeda</li>
+        </dd>
+      </dl>
+    </div>
+    <div class="cara-penulisan-array">
+      <h3>a. cara penulisan array</h3>
+      <main class="cpa-c">
+        <p>
+          const binatang = ['kucing', 'ANJIIING', 'lo', 'bangsat', 'setan', 'sapi', 'monyet']; <br>
+          console.log(binatang[4]); <br>
+          maka hasilnya adalah bangsat
+        </p>
+      </main>
+    </div>
+  </section>
+  <!-- !tipe data array end-->
+
+  <!-- !rekursif start -->
+  <section class="rekursif">
+    <div class="j-rekursif">
+      <h1>#rekursif</h1>
+      <p>rekursif adalah adlah sebuah fungsi yang memanggil dieinya sendiri</p>
+    </div>
+  </section>
+  <!-- !rekursif end -->
+
+  <script src="script/script.js"></script>
+
+</body>
+
+</html>
